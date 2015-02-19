@@ -14,3 +14,7 @@ package.package.scripts = {
     lint: 'standard',
     package: 'node package.js'
 }
+package.package.devDependencies = {
+    standard: '*',
+    'auto-package': '^0.1.1'
+}
