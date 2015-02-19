@@ -10,11 +10,13 @@ package.keyword('developer')
 package.github_repo('mightyiam/mightyiam.js')
 package.license = 'MIT'
 package.package.scripts = {
-    test: 'npm run lint && npm run package',
+    test: 'npm run package && npm run lint && npm run unit',
+    unit: 'jasmine',
     lint: 'standard',
     package: 'node package.js'
 }
 package.package.devDependencies = {
     standard: '*',
-    'auto-package': '^0.1.1'
+    'auto-package': '^0.1.1',
+    'jasmine': '^2.2.1'
 }

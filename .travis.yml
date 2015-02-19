@@ -3,3 +3,4 @@ node_js:
   - 0.10
   - 0.11
   - 0.11
+before_script: 'node package.js'
