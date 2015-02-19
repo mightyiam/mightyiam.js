@@ -10,6 +10,7 @@ package.keyword('developer')
 package.github_repo('mightyiam/mightyiam.js')
 package.license = 'MIT'
 package.package.scripts = {
-    test: 'npm run lint',
-    lint: 'standard'
+    test: 'npm run lint && npm run package',
+    lint: 'standard',
+    package: 'node package.js'
 }
