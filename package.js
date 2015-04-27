@@ -1,22 +1,24 @@
 var pkg = require('auto-package')
 
-pkg.name('mightyiam')
-pkg.version_file()
-pkg.author(require('./').authorString)
-pkg.description('Shahar Or (mightyiam)')
-pkg.package.main = 'index.js'
+pkg.name = 'mightyiam'
+pkg.versionFile()
+pkg.author = require('./').authorString
+pkg.description = 'Shahar Or (mightyiam)'
+pkg.main = 'index.js'
 pkg.keyword('person')
 pkg.keyword('developer')
-pkg.github_repo('mightyiam/mightyiam.js')
+pkg.githubRepo('mightyiam/mightyiam.js')
 pkg.license = 'MIT'
-pkg.package.scripts = {
-    test: 'npm run package && npm run lint && npm run unit',
-    unit: 'jasmine',
-    lint: 'standard',
-    package: 'node package.js'
+pkg.scripts = {
+  unit: 'jasmine',
+  lint: 'standard',
+  test: [
+    'npm run lint',
+    'npm run unit'
+  ].join(' && ')
 }
-pkg.package.devDependencies = {
-    standard: '*',
-    'auto-package': '^0.1.1',
-    'jasmine': '^2.2.1'
+pkg.devDependencies = {
+  standard: '*',
+  'auto-package': '^1.0.0',
+  'jasmine': '^2.2.1'
 }
