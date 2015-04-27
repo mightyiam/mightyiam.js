@@ -1,15 +1,18 @@
-var exports = module.exports
+var e = module.exports
 
-exports.firstName = 'Shahar'
-exports.lastName = 'Or'
-exports.fullName = exports.firstName + ' ' + exports.lastName
+e.firstName = 'Shahar'
+e.lastName = 'Or'
+e.fullName = e.firstName + ' ' + e.lastName
 
-exports.website = 'http://mightyi.am'
-exports.email = 'mightyiampresence@gmail.com'
+e.website = 'http://mightyi.am'
+e.email = 'mightyiampresence@gmail.com'
 
-exports.github = {}
-exports.github.username = 'mightyiam'
-exports.github.profileUrl = 'https://github.com/' + exports.github.username
+e.github = {}
+e.github.username = 'mightyiam'
+e.github.profileUrl = 'https://github.com/' + e.github.username
 
-module.exports.authorString = exports.fullName + ' <' + exports.email + '> (' +
-    exports.email + ')'
+e.authorString = [
+    e.fullName,
+    '<' + e.email + '>',
+    '(' + e.website + ')'
+].join(' ')
