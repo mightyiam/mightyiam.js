@@ -10,15 +10,10 @@ pkg.keyword('developer')
 pkg.githubRepo('mightyiam/mightyiam.js')
 pkg.license = 'MIT'
 pkg.scripts = {
-  unit: 'jasmine',
   lint: 'standard',
-  test: [
-    'npm run lint',
-    'npm run unit'
-  ].join(' && ')
+  test: 'npm run lint'
 }
 pkg.devDependencies = {
   standard: '*',
-  'auto-package': '^1.0.0',
-  'jasmine': '^2.2.1'
+  'auto-package': '^1.0.0'
 }
