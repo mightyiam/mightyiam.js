@@ -11,6 +11,13 @@ e.github = {}
 e.github.username = 'mightyiam'
 e.github.profileUrl = 'https://github.com/' + e.github.username
 
+// used as `author` and inside `contributors`
+e.person = {
+  name: e.fullName,
+  email: e.email,
+  url: e.website
+}
+
 e.authorString = [
   e.fullName,
   '<' + e.email + '>',
