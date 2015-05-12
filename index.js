@@ -12,7 +12,7 @@ e.github.username = 'mightyiam'
 e.github.profileUrl = 'https://github.com/' + e.github.username
 
 e.authorString = [
-    e.fullName,
-    '<' + e.email + '>',
-    '(' + e.website + ')'
+  e.fullName,
+  '<' + e.email + '>',
+  '(' + e.website + ')'
 ].join(' ')
